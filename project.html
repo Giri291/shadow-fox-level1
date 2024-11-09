@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: black;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: black;
+            color: white;
+            padding: 10px 0;
+
+
+        }
+
+        header nav ul {
+            list-style-type: none;
+            text-align: center;
+
+        }
+
+        header nav ul li {
+            display: inline;
+            margin: 0 20px;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+
+        .hero {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 100px 0;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.5rem;
+        }
+
+        .hero .btn {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #f76c6c;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+
+        }
+
+        .hero .btn:hover {
+            background-color: black;
+        }
+
+
+        #about {
+            padding: 50px;
+            text-align: center;
+            background-color: white;
+        }
+
+
+        #portfolio {
+            padding: 50px;
+            text-align: center;
+        }
+
+        .portfolio-items {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .portfolio-item {
+            width: 300px;
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .portfolio-item img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 15px;
+        }
+
+        #contact {
+            padding: 50px;
+            background-color: whitesmoke;
+            text-align: center;
+        }
+
+        #contact form input,
+        #contact form textarea {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+
+        #contact form button {
+            padding: 10px 20px;
+            background-color: #f76c6c;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        #contact form button:hover {
+            background-color: #333;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        .hero-content {
+            position: relative;
+        }
+
+        .hero-content img {
+            position: absolute;
+            top: 0px;
+            right: 1000px;
+        }
+
+        img {
+            border-radius: 50px;
+            box-shadow: 1px 1px 9px;
+            width: 200px;
+            height: 200px;
+        }
+
+        header nav ul li {
+            position: relative;
+
+        }
+
+        header nav ul li::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0px;
+            background: aqua;
+            left: 0;
+            bottom: -8px;
+            transition: 0.7s;
+
+        }
+
+        header nav ul li:hover:after {
+            width: 60px;
+
+
+        }
+
+        marquee {
+            padding-top: 10px;
+            font-size: 18px;
+            color: #f76c6c;
+
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <span></span>
+            </ul>
+        </nav>
+        <marquee scrollamount="10">Thanks for visting my portfilo  </marquee>
+    </header>
+    <section id="home" class="hero">
+        <img src="C:\Users\H GIRI\OneDrive\Pictures\Saved Pictures\giri1.jpg">
+        <div class="hero-content">
+            <h1>Hi, I'm H GIRI</h1>
+            <p>Web Developer | Designer | Creator</p>
+            <a href="#portfolio" class="btn">View My Work</a>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>First of all Thank you for visiting my web site.
+
+
+            My name is Giri. I am from Kuppam.
+            I completed Bsc computer science in 2024 with 75%. Intermediate form government
+            junior College chandragiri with 60%. Schooling from Z.P. high school with 88%.
+
+            Coming to my personal skills
+            I am self-motivated and a disciplined person. I'm a quick learner and fast worker. I have
+            completed my Java development course and gained certification on that. I like to travel,
+            I like to learn new things and also I will practice beat boxing and listening to song, I will
+            feel happy and motivated too.
+            That’s all about me. </p>
+    </section>
+    <section id="portfolio">
+        <h2>My Certificates</h2>
+        <div class="portfolio-items">
+            <div class="portfolio-item">
+                <img src="C:\Users\H GIRI\Downloads\GuviCertification - D301a93L592Q0o9778.png" alt="Certificate 1">
+                <h3>Certificate 1</h3>
+                <p>GUVI Certificate .</p>
+            </div>
+            <div class="portfolio-item">
+                <img src="Certificate.jpg" alt="Certificate 2">
+                <h3>Certificate 2</h3>
+                <p>A description of Certificate 2.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2024 H GIRI. All Rights Reserved.</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>
