@@ -93,7 +93,7 @@
         .portfolio-items {
             display: flex;
             justify-content: center;
-            gap: 30px;
+            gap: 150px;
         }
 
         .portfolio-item {
@@ -186,9 +186,41 @@
         marquee {
             padding-top: 10px;
             font-size: 18px;
-            color: #f76c6c;
+            font-family: Arial, Helvetica, sans-serif;
+            color: rgb(0,255,255);
 
         }
+        .inter{
+         padding-top: 10px;
+         background-color: white;
+        }
+        span{
+            padding-top:10px;
+            margin-bottom: 500px;
+        }
+        span .inter{
+            text-align: center;
+            box-shadow: 1px 1px 9px;
+        }
+        .portfolio-item img:focus{
+            transform: scale(1.8);
+          width: 400px;
+          height: 400px;
+          cursor: pointer;
+          justify-content: center;
+          text-align: center;
+
+        }
+        .top{
+            padding-top: 40px;
+        }
+        .top .Intern{
+            padding-top: 11px;
+          text-align:center;
+          background-color:white;
+          box-shadow: 1px 1px 9px;
+        }
+
     </style>
 </head>
 
@@ -198,12 +230,14 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Me</a></li>
-                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#portfolio">Certificate</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#Internship">Internship</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <span></span>
+
             </ul>
         </nav>
-        <marquee scrollamount="10">Thanks for visting my portfilo  </marquee>
+        <marquee scrollamount="10">Welcome To My Portfolio! Discover My Work, Skills and Passion For Creativity  </marquee>
     </header>
     <section id="home" class="hero">
         <img src="https://raw.githubusercontent.com/Giri291/image/main/giri1.jpg">
@@ -211,7 +245,7 @@
         <div class="hero-content">
             <h1>Hi, I'm H GIRI</h1>
             <p>Web Developer | Designer | Creator</p>
-            <a href="#portfolio" class="btn">View My Work</a>
+            <a href="#portfolio" class="btn">View My Certificate</a>
         </div>
     </section>
     <section id="about">
@@ -233,17 +267,34 @@
         <h2>My Certificates</h2>
         <div class="portfolio-items">
             <div class="portfolio-item">
-                <img src="C:\Users\H GIRI\Downloads\GuviCertification - D301a93L592Q0o9778.png" alt="Certificate 1">
                 <h3>Certificate 1</h3>
-                <p>GUVI Certificate .</p>
+                <img src="https://raw.githubusercontent.com/Giri291/giri-portfolio/main/GuviCertification%20-%20D301a93L592Q0o9778%20(1).png" alt="Certificate 1" tabindex="0"> 
+                <p>GUVI Certificate </p>
             </div>
             <div class="portfolio-item">
-                <img src="Certificate.jpg" alt="Certificate 2">
                 <h3>Certificate 2</h3>
-                <p>A description of Certificate 2.</p>
-            </div>
-        </div>
+                <img src="https://raw.githubusercontent.com/Giri291/giri-portfolio/main/java.jpg" alt="Certificate 2" tabindex="0">
+                <p>JAVA Certificate </p>
+            </div>      
     </section>
+    <span>
+        <div class="inter" id="skills">
+        <h1>Skills<h1>
+            <h3>Web development</h3>
+             <h3>Leadership skills </h3>
+             <h3>Intermediate level in java </h3>
+             <h3>Intermediate level in c language</h3>
+             <h3>Begineer level in SQL</h3>
+        </div>
+    </span>
+    <div class="top">
+        <div class="Intern" id="Internship">
+        <h1>Internship<h1>
+            <h3>Python Internship at Infosys for 2 Months </h3>
+             <h3>Java Internship at Innogeecks Technologies for 3 Months </h3>
+        </div>
+    </div>
+
     <section id="contact">
         <h2>Contact Me</h2>
         <form action="#" method="post">
